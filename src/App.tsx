@@ -6,6 +6,7 @@ export type TaskType = {
   id: number
   title: string
   isDone: boolean
+
 }
 
 function App() {
@@ -22,14 +23,14 @@ function App() {
 
       ]
   const tasks_2: TaskType[] = [
-    // {id: 1, title: "Cola", isDone: true},
-    // {id: 2, title: "Cheeps", isDone: true},
-    // {id: 3, title: "Salt", isDone: false},
+    {id: 1, title: "Cola", isDone: true},
+    {id: 2, title: "Cheeps", isDone: true},
+    {id: 3, title: "Salt", isDone: false},
   ]
   return (
       <div className="app">
-        <TodolistItem title={todolistTitle_1} tasks={tasks_1}/>
-        <TodolistItem title={todolistTitle_2} tasks={tasks_2}/>
+        <TodolistItem title={todolistTitle_1} tasks={tasks_1} date="19.04.2026"/>
+        <TodolistItem title={todolistTitle_2} tasks={tasks_2} date="19.04.2026"/>
       </div>
   )
 }

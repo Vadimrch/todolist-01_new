@@ -15,7 +15,7 @@ export const TodolistItem = ({title, tasks, deleteTask}: Props) => {
             <li>
                 <input type="checkbox" checked={t.isDone}/>
                 <span>{t.title}</span>
-                <button onClick={()=> deleteTask(t.id)}>x</button>
+                <Button title={"x"} onClick={() => deleteTask(t.id)}/>
             </li>
         )
     })
@@ -30,9 +30,12 @@ export const TodolistItem = ({title, tasks, deleteTask}: Props) => {
             </div>
             {taskItems}
             <div>
-                <Button title={"All"}/>
-                <Button title={"Active"}/>
-                <Button title={"Completed"}/>
+                <Button title={"All"} onClick={() => {
+                }}/>
+                <Button title={"Active"} onClick={() => {
+                }}/>
+                <Button title={"Completed"} onClick={() => {
+                }}/>
             </div>
 
         </div>
